@@ -4,7 +4,7 @@ _(Note as our associated paper is under review, we will only disclose the datase
 
 This repository contains open UWB localization datasets, captured in industrial, office and university environments and is published by IDLab - Ghent University - imec. 
 
-Three dataset environments are included: (i) IIoT19+20, (ii) OfficeLab, (iii) University. The first two datasets are captured in-house, at iGent, Zwijnaarde, Belgium [1]. The university dataset was made publicly available by [2] of which we selected a subset of ranges. Please refer to original author's work when using this dataset.
+Three dataset environments are included: (i) IIoT19+20, (ii) OfficeLab, (iii) University. The first two datasets are captured in-house, at iGent, Zwijnaarde, Belgium [1]. The university dataset was made publicly available by [2] of which we selected a subset of ranges. Please refer to the original author's work when using this dataset.
 
 We present three data files, for each environment: (a) _meta\__ files contain metadata of the UWB test setup and contain the ground truth labels ((N)LOS and UWB ranging error), (b) _features\__ contain extracted features from channel impulse responses (CIRs) and additional meta-features, (c) CIRs available [here]().
 
