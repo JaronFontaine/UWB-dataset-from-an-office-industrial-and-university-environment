@@ -13,6 +13,22 @@ We present three data files, for each environment: (a) _meta\__ files contain me
 
 We recommend reading the _meta_ and _features_ .csv data files using [pandas](https://github.com/pandas-dev/pandas), while the CIRs are formatted using the [HDF5](https://github.com/h5py/h5py) binary data format.
 
+## Example reading the CIR HDF5 file
+
+```python
+with h5py.File("CIRsV2.hdf5", "r") as data_file:
+    # Load datasets into numpy arrays
+    X_IIoT19 = np.array(data_file["IIoT19"]).astype(np.complex128)
+    X_IIoT20 = np.array(data_file["IIoT20"]).astype(np.complex128)
+    X_OfficeLab = np.array(data_file["OfficeLab"]).astype(np.complex128)
+    X_University_full = np.array(data_file["University_full"]).astype(np.complex128)
+    X_University_hw = np.array(data_file["University_hw"]).astype(np.complex128)
+    X_University_1_hw = np.array(data_file["University_1_hw"]).astype(np.complex128)
+    X_University_esl = np.array(data_file["University_esl"]).astype(np.complex128) 
+```
+
+## 
+
 More information about the environments, data capture strategy and results can be found in our publication [3].
 
 When using these datasets for future publications, please refer to [3].
