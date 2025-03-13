@@ -1,10 +1,15 @@
 # UWB-dataset-from-an-office-industrial-and-university-environment
 
+## --- Update 2025 ---
+The CIR link below has been updated with a new version (V2), which fixes the mis-alignment of IIoT19 samples and also includes seperate University CIRs corresponding to the features selected of three environments (hw, 1_hw, esl). The full university corresponds to the full University meta file. In addition, all data is ensured to be de-normalized, which was not the case before for the IIoT19, OfficeLab & University dataset.
+
+## 
+
 This repository contains open UWB localization datasets, captured in industrial, office and university environments and is published by IDLab - Ghent University - imec. 
 
 Three dataset environments are included: (i) IIoT19+20, (ii) OfficeLab, (iii) University. The first two datasets are captured in-house, at iGent, Zwijnaarde, Belgium [1]. The university dataset was made publicly available by [2] of which we selected a subset of ranges. Please refer to the original author's work when using this dataset.
 
-We present three data files, for each environment: (a) _meta\__ files contain metadata of the UWB test setup and contain the ground truth labels ((N)LOS and UWB ranging error), (b) _features\__ contain extracted features from channel impulse responses (CIRs) and additional meta-features, (c) CIRs available [here](https://cloud.ilabt.imec.be/index.php/s/BMF7mZnt4RTsHCL).
+We present three data files, for each environment: (a) _meta\__ files contain metadata of the UWB test setup and contain the ground truth labels ((N)LOS and UWB ranging error), (b) _features\__ contain extracted features from channel impulse responses (CIRs) and additional meta-features, (c) CIRs available [here](https://cloud.ilabt.imec.be/index.php/s/GPSecAzrjSqPK8j).
 
 We recommend reading the _meta_ and _features_ .csv data files using [pandas](https://github.com/pandas-dev/pandas), while the CIRs are formatted using the [HDF5](https://github.com/h5py/h5py) binary data format.
 
